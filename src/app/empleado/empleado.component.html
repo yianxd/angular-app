@@ -1,0 +1,22 @@
+<p>Aqui va empleados...</p>
+<P>nombre: {{nombre}} </P>
+<p> un numero: {{ numero_empleado<2 ? "tipo1":"tipo2"}} </p>
+<p> los clave valor: {{ objetc }} </p>
+<p> un array: {{  array }} </p>
+<p> privados: {{ getAtributo() }}</p>
+
+
+<!-- agregar nombre: <input type="text" #nombre (keyup)="0" [disabled]="activate"> -->
+
+
+Agregar nombre:  <input  type="text" [(ngModel)]="nombre">
+<br>
+<br>
+Registrado: <input type="radio" name="nRegistro" value="si" id="registro" [checked]="usuRegistro" (click)="setusuarioRegistro($event)"> 
+<br>
+No registrado: <input type="radio"  value="no" name="nRegistro" (click)="setusuarioRegistro($event)">
+<br>
+{{ mensaje }}
+{{ getRegsitroUsuario()}}
+
+<!--<input type="button" value="Enviar" (click)="addNombre(nombre.value)"> -->
